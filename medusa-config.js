@@ -44,7 +44,11 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
+      serve: false,
       autoRebuild: true,
+      backend: "https://newstore-production-cfb3.up.railway.app",
+      path: "/app",
+      outDir: "build",
     },
   },
 ];
